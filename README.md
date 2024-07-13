@@ -1,4 +1,4 @@
-# Quadro de Tarefas
+# CRUD
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/92c1beac-8934-4095-82f0-af67343ea67c/deploy-status)](https://app.netlify.com/sites/transcendent-yeot-2e0134/deploys)
 
