@@ -6,8 +6,17 @@ const openModal = () => document.getElementById('modal')
 const closeModal = () => document.getElementById('modal')
     .classList.remove('active')
 
+
+// CRUD
+
+
+
+// Eventos
 document.getElementById('cadastrarCliente')
     .addEventListener('click', openModal)
 
 document.getElementById('modalClose')
+    .addEventListener('click', closeModal)
+    
+document.getElementById('modalCancel')
     .addEventListener('click', closeModal)
