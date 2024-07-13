@@ -6,7 +6,8 @@
 
 .records th{
     height: 50px;
-    background-color: var(--primary-color);
+    background-color: var(--primary-dark);
+    color: var(--secundary-color);
     padding-left: 20px;
     font-size: 1.2rem;    
 }
@@ -24,10 +25,10 @@
 }
 
 .records tr:hover{
-    background-color: var(--secundary-color);
+    background-color: var(--tr-dark);
 }
 .records tr:hover td{
-    color: var(--bg-darck);
+    color: var(--secundary-color);
 }
 
 @media(max-width:480px){
