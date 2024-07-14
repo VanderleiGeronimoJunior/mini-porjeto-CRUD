@@ -77,6 +77,7 @@ const saveClient = () => {
     }
 }
 
+
 // Trazer os dados do LocalStorage
 
 const createRow =(client) => {
@@ -105,6 +106,11 @@ const upDataTable = () => {
     dbClient.forEach(createRow)
 }
 
+// Botão Editar/Excluir
+const editDelete = (e) => {
+    console.log(e)
+}
+
 upDataTable()
 
 // Eventos
@@ -120,3 +126,10 @@ document.getElementById('cancelar')
 // Botão Salvar
 document.getElementById('salvar')
     .addEventListener('click', saveClient)
+
+document.querySelector('#tbClient>tbody')
+    .addEventListener('click', editDelete)
+
+
+
+
