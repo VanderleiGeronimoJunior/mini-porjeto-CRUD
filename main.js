@@ -3,15 +3,24 @@
 const openModal = () => document.getElementById('modal')
     .classList.add('active')
 
-const closeModal = () => document.getElementById('modal')
+const closeModal = () => {document.getElementById('modal')
     .classList.remove('active')
+    clearFields()
+}
 
-const tempClient = {
-    name: "Red",
-    email: "red@gmail.com",
-    celular: "48999565538",
-    cidade: "Araranguá"
-    }
+const clearFields = () => {
+    const fields = document.querySelectorAll('.modal-field')
+    fields.forEach(field => field.value = "")
+}
+
+// const tempClient = {
+//     name: "Red",
+//     email: "red@gmail.com",
+//     celular: "48999565538",
+//     cidade: "Araranguá"
+//     }
+
+
 
 
 
@@ -44,6 +53,29 @@ const createClient = (client) => {
     setLocalStorage(dbClient)
 }
 
+// Validação de campos Modal
+const isValidFields = () => {
+    return document.getElementById('formClient').reportValidity()
+}
+
+
+
+// Interação com Layout/usuário
+// Botão Salvar
+const saveClient = () => {
+    // Verificar se os campos preenchidos são validos
+    if (isValidFields()){
+        const client = {
+            name: document.getElementById('nome').value,
+            email: document.getElementById('email').value,
+            celular: document.getElementById('celular').value,
+            cidade: document.getElementById('cidade').value
+        }
+        createClient(client)
+        clearFields()
+        closeModal()
+    }
+}
 
 
 // Eventos
@@ -53,5 +85,9 @@ document.getElementById('cadastrarCliente')
 document.getElementById('modalClose')
     .addEventListener('click', closeModal)
     
-document.getElementById('modalCancel')
+document.getElementById('cancelar')
     .addEventListener('click', closeModal)
+
+// Botão Salvar
+document.getElementById('salvar')
+    .addEventListener('click', saveClient)
