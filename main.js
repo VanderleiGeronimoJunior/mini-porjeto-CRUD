@@ -7,8 +7,8 @@ const closeModal = () => document.getElementById('modal')
     .classList.remove('active')
 
 const tempClient = {
-    name: "Abela",
-    email: "abela@gmail.com",
+    name: "Red",
+    email: "red@gmail.com",
     celular: "48999565538",
     cidade: "Araranguá"
     }
@@ -19,10 +19,19 @@ const tempClient = {
 const setLocalStorage = (dbClient) => localStorage.setItem("dbClient", JSON.stringify(dbClient))
 
 // CRUD
+// DELETE
+const deleteClient = (index) => {
+    const dbClient = readClient()
+    dbClient.splice(index, 1)
+    setLocalStorage(dbClient)
+}
 
 // UPDATE
-const updateClient = (client) => {
-    
+const updateClient = (index, client) => {
+    const dbClient = readClient()
+    // pegar o index para saber qual será editado
+    dbClient[index] = client
+    setLocalStorage(dbClient)
 }
 
 // READ
