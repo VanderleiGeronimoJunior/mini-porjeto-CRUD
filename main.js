@@ -3,9 +3,9 @@
 const openModal = () => document.getElementById('modal')
     .classList.add('active')
 
-const closeModal = () => {document.getElementById('modal')
-    .classList.remove('active')
+const closeModal = () => {
     clearFields()
+    document.getElementById('modal').classList.remove('active')
 }
 
 const clearFields = () => {
@@ -13,12 +13,12 @@ const clearFields = () => {
     fields.forEach(field => field.value = "")
 }
 
-// const tempClient = {
-//     name: "Red",
-//     email: "red@gmail.com",
-//     celular: "48999565538",
-//     cidade: "Araranguá"
-//     }
+const tempClient = {
+    name: "Red",
+    email: "red@gmail.com",
+    celular: "48999565538",
+    cidade: "Araranguá"
+    }
 
 
 
@@ -72,11 +72,40 @@ const saveClient = () => {
             cidade: document.getElementById('cidade').value
         }
         createClient(client)
-        clearFields()
         closeModal()
+        upDataTable()
     }
 }
 
+// Trazer os dados do LocalStorage
+
+const createRow =(client) => {
+    const newRow = document.createElement('tr')
+    newRow.innerHTML = `
+    <td>${client.name}</td>
+    <td>${client.email}</td>
+    <td>${client.celular}</td>
+    <td>${client.cidade}</td>
+    <td>
+        <button type="button" class="button green">editar</button>
+        <button type="button" class="button red">excluir</button>
+    </td>
+    `
+    document.querySelector('#tbClient>tbody').appendChild(newRow)
+}
+
+const clearTable = () => {
+    const rows = document.querySelectorAll('#tbClient>tbody tr')
+    rows.forEach(row => row.parentNode.removeChild(row))
+}
+
+const upDataTable = () => {
+    const dbClient = readClient()
+    clearTable()
+    dbClient.forEach(createRow)
+}
+
+upDataTable()
 
 // Eventos
 document.getElementById('cadastrarCliente')
