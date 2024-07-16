@@ -19,14 +19,15 @@
 
 ##  Sobre o Projeto
 
- O projeto consiste em criar um Quador de Tarefas parecido com o Trello em que o usuário tem apossibilidade de criar suas tarefas e arrasta-las para um novo quadro na medida em que a situação da mesma estiver, assim podendo organizar cada tarefa.
+ O Projeto tem como prioridade Conhecer novas maneiras de usar funções e também melhorar meus conhecimentos em CRUD.
+ Aprender as rotinas para se construir um CRUD.
 
 
  <a href="#indice">Indice</a>
 
 ##  Objetivos
-Criar um Quador de Tarefas(TODO LIST - estilo TRELLO) com a funcionalidade de arrastar uma tarefar conforme elas forem completadas.
-
+Aprender melhor rotinas de um CRUD.
+Aprender como tratar as rotinas do CRUD, creat, read, update, delete.
 
 ## Funcionalidades
 - Criar card na coluna com duplo click

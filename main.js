@@ -71,16 +71,23 @@ const saveClient = () => {
             celular: document.getElementById('celular').value,
             cidade: document.getElementById('cidade').value
         }
+        const index = document.getElementById('nome').dataset.index
+        if(index == 'new'){
         createClient(client)
         closeModal()
         upDataTable()
+        }else{
+            updateClient(index, client)
+            upDataTable()
+            closeModal()
+        }
     }
 }
 
 
 // Trazer os dados do LocalStorage
 
-const createRow =(client) => {
+const createRow =(client, index) => {
     const newRow = document.createElement('tr')
     newRow.innerHTML = `
     <td>${client.name}</td>
@@ -88,8 +95,8 @@ const createRow =(client) => {
     <td>${client.celular}</td>
     <td>${client.cidade}</td>
     <td>
-        <button type="button" class="button green">editar</button>
-        <button type="button" class="button red">excluir</button>
+        <button type="button" class="button green" id='edit-${index}'>editar</button>
+        <button type="button" class="button red" id='delete-${index}'>excluir</button>
     </td>
     `
     document.querySelector('#tbClient>tbody').appendChild(newRow)
@@ -107,8 +114,30 @@ const upDataTable = () => {
 }
 
 // Botão Editar/Excluir
+const fillFields = (client) => {
+    document.getElementById('nome').value = client.name
+    document.getElementById('email').value = client.email
+    document.getElementById('celular').value = client.celular
+    document.getElementById('cidade').value = client.cidade
+    document.getElementById('nome').dataset.index = client.index
+}
+
+const editClient = (index) => {
+    const client = readClient()[index]
+    client.index = index
+    fillFields(client)
+    openModal()
+}
+
 const editDelete = (e) => {
-    console.log(e)
+    if(e.target.type == 'button'){
+        const [action, index] = e.target.id.split('-')
+        if(action == 'edit'){
+        editClient(index)
+        }else{
+        deleteClient(index)
+        }
+    }
 }
 
 upDataTable()
