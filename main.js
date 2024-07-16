@@ -135,7 +135,12 @@ const editDelete = (e) => {
         if(action == 'edit'){
         editClient(index)
         }else{
-        deleteClient(index)
+        const client = readClient()[index]
+        const response = confirm(`Deseja Excluir o cliente ${client.nome}?`)
+        if(response){
+            deleteClient(index)
+            upDataTable()
+        }
         }
     }
 }
