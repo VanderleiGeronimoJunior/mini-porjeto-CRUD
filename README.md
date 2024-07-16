@@ -30,10 +30,7 @@ Aprender melhor rotinas de um CRUD.
 Aprender como tratar as rotinas do CRUD, creat, read, update, delete.
 
 ## Funcionalidades
-- Criar card na coluna com duplo click
-    - Quando criado o card, já vim Selecionado para edição.
-    - Mover os carde para a coluna desejada.
-- Alterar a Cor da coluna quando o card estiver se movimentando.
+
 
  <a href="#indice">Indice</a>
 
@@ -41,9 +38,9 @@ Aprender como tratar as rotinas do CRUD, creat, read, update, delete.
 📸
 
 #### Qudro Tarefas
-<img style="width:300px" src="./img/qudro-tarefas.png" alt="qudro tarefas">
+<img style="width:300px" src="./img/" alt="">
 
-<img style="width:300px" src="./img/qt-em-execucao.png" alt="qudro tarefas em execução">
+<img style="width:300px" src="./img/" alt="">
 
 
 
@@ -51,7 +48,7 @@ Aprender como tratar as rotinas do CRUD, creat, read, update, delete.
 
 ## Demonstração
 
-[Link Demontração](<a href="https://quadro-de-tarefas0.netlify.app/">Task Board (Quadro de tarefas)</a>)
+[Link Demontração](<a href="https://"></a>)
 
 
 ## Linguagens utilizadas
@@ -63,42 +60,23 @@ HTML | CSS | JavaScript
 ###  O que eu aprendi
 🤓
 
-- Como mover(arrastar/soltar) objetos com o atributo Draggable.
-- Manipular evendos Draggable
-    - dragover
-    - dragenter
-    - dragleave
-    - drop
 
  <a href="#indice">Indice</a>
 
 ## Melhorias na aplicação
 
-- Mudar o cursor do mause para mão quando mover o quadro.
-- Editar/Excluir os cards já existentes colocando icone de três pontos no card.
-    - Salvar o conteúdo no LocalStorage
+
 
  <a href="#indice">Indice</a>
 
 ## Lista de implementações
 
-- Botão de adicionar nova coluna.
-- Contador de tarefas en cada coluna.
-- Excluir os cards.
-- Usar LocalStorage para não perder as tarefas
-- Implemtar um CRUD
-    - Criar
-    - Ler
-    - Atualizar
-    - Deletar
-- Sistema de login/logout
-    - Criar autenticação de usuário talvez?
 
  <a href="#indice">Indice</a>
 
 ###   Recursos Úteis
 🔧
-- <a href="https://icons8.com/" target="_blank">icons8</a>
+- <a href="" target="_blank"></a>
 
  <a href="#indice">Indice</a>
 
