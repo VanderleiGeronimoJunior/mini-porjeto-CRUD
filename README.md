@@ -28,6 +28,7 @@
 ##  Objetivos
 Aprender melhor rotinas de um CRUD.
 Aprender como tratar as rotinas do CRUD, creat, read, update, delete.
+Melorar e Aprender o uso do LocalStorage.
 
 ## Funcionalidades
 
@@ -37,8 +38,10 @@ Aprender como tratar as rotinas do CRUD, creat, read, update, delete.
 ## Captura de tela 
 📸
 
-#### Qudro Tarefas
-<img style="width:300px" src="./img/" alt="">
+#### CRUD com LcalStorage
+<img style="width:300px" src="./img/tela-crud.png" alt="">
+<img style="width:300px" src="./img/modal-cadastro-crud.png" alt="">
+<img style="width:300px" src="./img/crud-com-cadastros.png" alt="">
 
 <img style="width:300px" src="./img/" alt="">
 
@@ -48,7 +51,7 @@ Aprender como tratar as rotinas do CRUD, creat, read, update, delete.
 
 ## Demonstração
 
-[Link Demontração](<a href="https://"></a>)
+[Link Demontração](<a href="https://mini-crud-2024.netlify.app/">mini-crud-2024</a>)
 
 
 ## Linguagens utilizadas
@@ -60,11 +63,13 @@ HTML | CSS | JavaScript
 ###  O que eu aprendi
 🤓
 
+- Trabalhar nas rotinas necessárias para o uso do localStorage.
+
 
  <a href="#indice">Indice</a>
 
 ## Melhorias na aplicação
-
+- Trocar o nome da modal quando estiver Editando.
 
 
  <a href="#indice">Indice</a>
