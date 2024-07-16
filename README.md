@@ -88,7 +88,7 @@ HTML | CSS | JavaScript
 
 ##   Autor
 🧑‍💻
-- <a href="https://www.youtube.com/watch?v=Bc09sITr6FE" target="_blank" rel="noopener noreferrer">Canal Manual do Dev</a>
+- <a href="https://www.youtube.com/watch?v=_HEIqE_qqbQ" target="_blank" rel="noopener noreferrer">Prof. Fernando Leonid</a>
 
  <a href="#indice">Indice</a>
 
