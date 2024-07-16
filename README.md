@@ -70,6 +70,7 @@ HTML | CSS | JavaScript
 
 ## Melhorias na aplicação
 - Trocar o nome da modal quando estiver Editando.
+- Implementar o dark mode.
 
 
  <a href="#indice">Indice</a>
